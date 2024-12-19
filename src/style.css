@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'font';
+  src: url('/static/font.ttf') format('truetype');
+}
+
+* {
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+  }
+  
+  .align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  body {
+    font-family: 'font', Arial, sans-serif;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+  }
+  .menu-container {
+    font-family: 'font', Arial, sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 50%; /* Position in the middle of the screen vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    padding: 20px; /* Add padding for spacing inside the container */
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent background with slight white tint */
+    border: 2px solid rgba(221, 221, 221, 0.6); /* Semi-transparent border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 300px; /* Adjust menu size */
+  }
+
+  h3 {
+    font-family: 'font', Arial, sans-serif;
+
+    font-size: 1rem
+  }
+  
+  .menu-container h1 {
+    font-family: 'font', Arial, sans-serif;
+    font-size: 3rem; /* Larger font size for the title */
+    margin-bottom: 30px; /* Spacing below the title */
+    color: #333; /* Dark text color */
+  }
+  
+  button {
+    font-family: 'font', Arial, sans-serif;
+    display: block;
+    width: 250px; /* Adjust button width */
+    margin: 15px auto; /* Center buttons and add spacing */
+    padding: 15px; /* Add padding for larger clickable area */
+    font-size: 1.2rem; /* Larger text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .turn-container {
+    width: 170px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+  }
+  
+  .turn-container h3 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  .turn-container .turn-box {
+    border: 3px solid black;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  
+  .turn-container .turn-box:nth-child(even) {
+    border-right: none;
+  }
+  
+  .bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: darkblue;
+    z-index: -1;
+  }
+  
+  .main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 500px;
+    width: 500px;
+    margin: 30px auto;
+    border: 5px solid black;
+  }
+  
+  .box {
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .box:hover {
+    background-color: blue;
+  }
+  
+  #play-again {
+    background-color: blue;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #play-again:hover {
+    padding: 10px 40px;
+    background-color: white;
+    color: black;
+  }
+  
